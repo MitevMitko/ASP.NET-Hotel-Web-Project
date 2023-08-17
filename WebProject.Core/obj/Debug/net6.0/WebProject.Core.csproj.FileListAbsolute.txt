@@ -1,0 +1,34 @@
+D:\Programming Staff\C# Projects\C# Web May 2023\Final_Exam_Website\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\WebProject.Core.csproj.AssemblyReference.cache
+D:\Programming Staff\C# Projects\C# Web May 2023\Final_Exam_Website\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\WebProject.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming Staff\C# Projects\C# Web May 2023\Final_Exam_Website\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\WebProject.Core.AssemblyInfoInputs.cache
+D:\Programming Staff\C# Projects\C# Web May 2023\Final_Exam_Website\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\WebProject.Core.AssemblyInfo.cs
+D:\Programming Staff\C# Projects\C# Web May 2023\Final_Exam_Website\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\WebProject.Core.csproj.CoreCompileInputs.cache
+D:\Programming Staff\C# Projects\C# Web May 2023\Final_Exam_Website\Web_Project\WebProject\WebProject.Core\bin\Debug\net6.0\WebProject.Core.deps.json
+D:\Programming Staff\C# Projects\C# Web May 2023\Final_Exam_Website\Web_Project\WebProject\WebProject.Core\bin\Debug\net6.0\WebProject.Core.dll
+D:\Programming Staff\C# Projects\C# Web May 2023\Final_Exam_Website\Web_Project\WebProject\WebProject.Core\bin\Debug\net6.0\WebProject.Core.pdb
+D:\Programming Staff\C# Projects\C# Web May 2023\Final_Exam_Website\Web_Project\WebProject\WebProject.Core\bin\Debug\net6.0\WebProject.Infrastructure.dll
+D:\Programming Staff\C# Projects\C# Web May 2023\Final_Exam_Website\Web_Project\WebProject\WebProject.Core\bin\Debug\net6.0\WebProject.Infrastructure.pdb
+D:\Programming Staff\C# Projects\C# Web May 2023\Final_Exam_Website\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\WebProject.Core.csproj.CopyComplete
+D:\Programming Staff\C# Projects\C# Web May 2023\Final_Exam_Website\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\WebProject.Core.dll
+D:\Programming Staff\C# Projects\C# Web May 2023\Final_Exam_Website\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\refint\WebProject.Core.dll
+D:\Programming Staff\C# Projects\C# Web May 2023\Final_Exam_Website\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\WebProject.Core.pdb
+D:\Programming Staff\C# Projects\C# Web May 2023\Final_Exam_Website\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\ref\WebProject.Core.dll
+D:\Programming Staff\C# Projects\C# Web May 2023\Final_Exam_Website\Web_Project\WebProject\WebProject.Core\bin\Debug\net6.0\WebProject.Common.dll
+D:\Programming Staff\C# Projects\C# Web May 2023\Final_Exam_Website\Web_Project\WebProject\WebProject.Core\bin\Debug\net6.0\WebProject.Common.pdb
+D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Core\bin\Debug\net6.0\WebProject.Core.deps.json
+D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Core\bin\Debug\net6.0\WebProject.Core.dll
+D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Core\bin\Debug\net6.0\WebProject.Core.pdb
+D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Core\bin\Debug\net6.0\WebProject.Common.dll
+D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Core\bin\Debug\net6.0\WebProject.Infrastructure.dll
+D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Core\bin\Debug\net6.0\WebProject.Infrastructure.pdb
+D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Core\bin\Debug\net6.0\WebProject.Common.pdb
+D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\WebProject.Core.csproj.AssemblyReference.cache
+D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\WebProject.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\WebProject.Core.AssemblyInfoInputs.cache
+D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\WebProject.Core.AssemblyInfo.cs
+D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\WebProject.Core.csproj.CoreCompileInputs.cache
+D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\WebProject.Core.csproj.CopyComplete
+D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\WebProject.Core.dll
+D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\refint\WebProject.Core.dll
+D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\WebProject.Core.pdb
+D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Core\obj\Debug\net6.0\ref\WebProject.Core.dll

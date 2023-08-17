@@ -1,0 +1,70 @@
+﻿@model AllRoomsQueryModel
+
+@{
+    ViewBag.Title = "All Rooms";
+}
+
+<h2 class="text-center">@ViewBag.Title</h2>
+<hr />
+
+<form method="get">
+    <div class="row">
+        <div class="form-group col-md-3 d-flex justify-content-between">
+            <div class="form-group">
+                 <label asp-for="Type">Type</label>
+                 <select asp-for="Type" class="form-control">
+                     <option value="">All</option>
+                     @foreach (string type in Model.Types)
+                     {
+                         <option value="@type">@type</option>
+                     }
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group col-md-3 d-flex justify-content-between">
+            <div class="form-group">
+                <label asp-for="BedType">Sort Room By Bed Type</label>
+                <select asp-for="BedType" class="form-control">
+                    <option value="">All</option>
+                    @foreach (string bedtype in Model.BedTypes)
+                    {
+                        <option value="@bedtype">@bedtype</option>
+                    }
+                </select>
+            </div>
+        </div>
+            <div class="form-group col-md-3">
+                <div class="form-group">
+                    <label asp-for="RoomSorting">Sort Rooms By</label>
+                    <select asp-for="RoomSorting" class="form-control">
+                        <option value="0">All</option>
+                        <option value="1">Price Ascending</option>
+                        <option value="2">Price Descending</option>
+                    </select>
+                </div>
+            </div>
+
+        <div class="col-md-3">
+            <div class="form-group mt-4 p-2">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+</form>
+
+@if (!Model.Rooms.Any())
+{
+     <h2 class="text-center">No houses found by the given criteria!</h2>
+}
+<div class="container">
+    <div class="row">
+        @foreach (var room in Model.Rooms)
+        {
+            <div class="col-md-4">
+                <partial name="_HousePartial" model="@room" />
+            </div>
+        }
+    </div>
+</div>
+

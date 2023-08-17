@@ -1,0 +1,25 @@
+﻿@model IEnumerable<AllContactsViewModel>
+
+@{
+    ViewBag.Title = "Contacts";
+}
+
+
+<h2 class="text-center">@ViewBag.Title</h2>
+<hr />
+
+<div class="text-center row">
+    @foreach (var e in Model)
+    {
+                <div class="card col-4" style="width: 20rem;">
+                    <div class="card-body">
+                        <p class="mb-0"><span class="fw-bold">Email: </span>@e.Email</p>
+                        <p class="mb-0"><span class="fw-bold">Phone Number: </span>@e.PhoneNumber</p>
+                    </div>
+                </div>
+    }
+</div>
+
+@section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+}

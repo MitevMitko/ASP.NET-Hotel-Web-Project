@@ -1,0 +1,67 @@
+﻿@model DetailsRoomViewModel
+
+@{
+    ViewBag.Title = "Room Details";
+}
+
+
+<h2 class="text-center">@ViewBag.Title</h2>
+<hr />
+
+<div class="row">
+    <div class="card w-100">
+        <div class="card-body">
+            <h3 class="card-title text-center">@Model.Name</h3>
+
+            @if (!string.IsNullOrEmpty(Model.RoomImage))
+            {
+                    <img src="data:image/png;base64,@Model.RoomImage" width="200" height="150" alt="Image" />
+            }
+            else
+            {
+                <p>No image data available.</p>
+            }
+
+            <p class="text-center"><span class="fw-bold">Description: </span>@Model.Description</p>
+            <p class="text-center"><span class="fw-bold">Price Per Night: </span>@Model.PricePerNight</p>
+            <p class="text-center"><span class="fw-bold">Bed Type: </span>@Model.BedType</p>
+            <p class="text-center"><span class="fw-bold">Room Type: </span>@Model.RoomType</p>
+
+            @if (Model.FromDate != null)
+            {
+                <p class="text-center"><span class="fw-bold">Booked From: </span>@Model.FromDate</p>
+            }
+
+            @if (Model.ToDate != null)
+            {
+                <p class="text-center"><span class="fw-bold">Book To: </span>@Model.ToDate</p>
+            }
+
+            <div class="card-body">
+                <h4 class="card-title text-center">Room Facilities</h4>
+                @foreach (var e in Model.RoomFacilities)
+                {
+                        <p class="text-center">@e.Title</p>
+                }
+            </div>
+            <div class="card-body">
+                <h4 class="card-title text-center">More Images</h4>
+                @foreach (var image in Model.RoomImages)
+                {
+                        <img src="data:image/png;base64,@image" width="200" height="150" alt="Image" />
+                }
+            </div>
+
+            <a asp-controller="Room" asp-action="All" class="btn btn-warning mb-2 w-100 p-3 fw-bold">Back to All Rooms</a>
+
+            @if (Model.FromDate == null && Model.ToDate == null)
+            {
+                <a asp-controller="Room" asp-action="Book" asp-route-id="@Model.Id" class="btn btn-warning mb-2 w-100 p-3 fw-bold">Book</a>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+}

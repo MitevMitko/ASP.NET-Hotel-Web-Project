@@ -1,0 +1,28 @@
+﻿@model IEnumerable<AllLandmarksViewModel>
+
+@{
+    ViewBag.Title = "All Rooms";
+}
+
+
+<h2 class="text-center">@ViewBag.Title</h2>
+<hr />
+
+<div class="text-center row">
+    @foreach (var e in Model)
+    {
+            <div class="card col-4" style="width: 20rem; ">
+                <div class="card-body">
+                    <h5 class="card-title mt-1">@e.Name</h5>
+                    <p class="mb-0"><span class="fw-bold">Distance: </span>@e.Distance km</p>
+                </div>
+
+                <a asp-controller="Landmark" asp-action="Details" asp-route-id="@e.Id" class="btn btn-warning mb-2 w-100 p-3 fw-bold">View Details</a>
+                <a asp-controller="Landmark" asp-action="Book" asp-route-id="@e.Id" class="btn btn-warning mb-2 w-100 p-3 fw-bold">Book</a>
+            </div>
+    }
+</div>
+
+@section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+}

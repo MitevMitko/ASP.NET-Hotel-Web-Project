@@ -1,0 +1,28 @@
+﻿@model AllRoomsViewModel
+
+<div class="row text-center">
+    <div class="card col-md-4" style="width: 20rem; ">
+        <div class="card-body">
+            <h5 class="card-title mt-1">@Model.Name</h5>
+        @if (!string.IsNullOrEmpty(Model.RoomImage))
+        {
+                    <img src="data:image/png;base64,@Model.RoomImage" width="200" height="150" alt="Image" />
+        }
+        else
+        {
+                <p>No image data available.</p>
+        }
+            <p class="mb-0"><span class="fw-bold">Price Per Night: </span>@Model.PricePerNight lv.</p>
+        </div>
+        <a asp-controller="Room" asp-action="Details" asp-route-id="@Model.Id" class="btn btn-warning mb-2 w-100 p-3 fw-bold">View Details</a>
+
+        @if (Model.FromDate == null && Model.ToDate == null)
+        {
+            <a asp-controller="Room" asp-action="Book" asp-route-id="@Model.Id" class="btn btn-warning mb-2 w-100 p-3 fw-bold">Book</a>
+        }
+    </div>
+</div>
+
+@section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+}
