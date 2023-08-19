@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PeTy8QVJSLDcovxrs+565T+9ZqlLKztp6dwtDmNHRPhn1pk7koNJVL3J/mdEraxK4iHPksWk5kC4vBMeaP+P1Q==",
+  "dgSpecHash": "L5prvCOwuVO/VFap/zruxeP9u5F5q+gmngoOfrpaPQgH3PzWGvmx5NbiavNSmaWELBYctsme+Jeqc/MqtrCjJg==",
   "success": true,
-  "projectFilePath": "D:\\Programming Staff\\Github\\Web_Project\\WebProject\\WebProject.Common\\WebProject.Common.csproj",
+  "projectFilePath": "D:\\Programming Staff\\Github\\ASP.NET-Hotel-Web-Project\\WebProject.Common\\WebProject.Common.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

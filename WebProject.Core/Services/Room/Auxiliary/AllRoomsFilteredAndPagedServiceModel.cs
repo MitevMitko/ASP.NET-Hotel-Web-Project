@@ -1,7 +1,7 @@
-﻿using WebProject.Core.Models.Room;
-
-namespace WebProject.Core.Services.Room.Auxiliary
+﻿namespace WebProject.Core.Services.Room.Auxiliary
 {
+    using Models.Room;
+
     public class AllRoomsFilteredAndPagedServiceModel
     {
         public AllRoomsFilteredAndPagedServiceModel()

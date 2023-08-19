@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8dLrO8HbXwvH31uCo+XnrXbihXYbdPPxJGjvuwShfzjts4U4cbUtjtQzzcaW8ihpmG2+52AP9nuXi7zh6gqiQw==",
+  "dgSpecHash": "boZnHpTPZvuv6tIX59mMsooR639yZ5h/ZCn1excFRGR2/FyfUV1bRXFB0fjhag/g0Q7BgDsG2XJWFAG5ep8u4g==",
   "success": true,
-  "projectFilePath": "D:\\Programming Staff\\Github\\Web_Project\\WebProject\\WebProject.Core\\WebProject.Core.csproj",
+  "projectFilePath": "D:\\Programming Staff\\Github\\ASP.NET-Hotel-Web-Project\\WebProject.Core\\WebProject.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Митко Георгиев Митев\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\Митко Георгиев Митев\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

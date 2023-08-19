@@ -33,6 +33,8 @@
 
         public DbSet<ApplicationUserLandmark> ApplicationUsersLandmarks { get; set; } = null!;
 
+        public DbSet<ApplicationUserRoom> ApplicationUserRoom { get; set; } = null!;
+
         public DbSet<Bed> Beds { get; set; } = null!;
 
         public DbSet<Contact> Contacts { get; set; } = null!;

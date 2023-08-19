@@ -1,0 +1,28 @@
+﻿@model UserBookedRoomsViewModel
+
+<div class="row text-center">
+    <div class="card col-md-4" style="width: 20rem; ">
+        <div class="card-body">
+            <h5 class="card-title mt-1">@Model.Name</h5>
+            @if (!string.IsNullOrEmpty(Model.RoomImage))
+            {
+                <img src="data:image/png;base64,@Model.RoomImage" width="200" height="150" alt="Image" />
+            }
+            else
+            {
+                <p>No image data available.</p>
+            }
+            <p class="mb-0"><span class="fw-bold">Room Type: </span>@Model.RoomType</p>
+            <p class="mb-0"><span class="fw-bold">Bed Type: </span>@Model.BedType</p>
+            <p class="mb-0"><span class="fw-bold">Price Per Night: </span>@Model.PricePerNight lv.</p>
+            <p class="mb-0"><span class="fw-bold">Days Of Stay: </span>@Model.DaysOfStay</p>
+            <p class="mb-0"><span class="fw-bold">Total Price: </span>@Model.TotalPrice</p>
+            <p class="mb-0"><span class="fw-bold">Occupied from: </span>@Model.FromDate</p>
+            <p cite="mb-0"><span class="fw-bold">Occupied to: </span>@Model.ToDate</p>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

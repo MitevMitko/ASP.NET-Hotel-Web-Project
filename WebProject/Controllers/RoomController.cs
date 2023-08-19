@@ -181,7 +181,7 @@
 
             try
             {
-                var userId = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+                string userId = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)!.Value;
 
                 await roomService.BookRoomHttpPost(model, userId);
 
@@ -193,6 +193,29 @@
                 ModelState.AddModelError("", "Something went wrong!");
 
                 return RedirectToAction("Book", "Room");
+            }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> UserBookedRooms([FromQuery] AllUserBookedRoomsQueryModel queryModel)
+        {
+            try
+            {
+                string userId = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)!.Value;
+
+                AllUserBookedRoomsFilteredServiceModel serviceModel = await roomService.AllUserBookedRoomsFiltered(queryModel, userId);
+
+                queryModel.Rooms = serviceModel.Rooms;
+                queryModel.BedTypes = await unitOfWork.Rooms.GetAllBedTypesNamesAsync();
+                queryModel.Types = await unitOfWork.Rooms.GetAllRoomTypesNamesAsync();
+
+                return View(queryModel);
+            }
+            catch (Exception)
+            {
+                ModelState.AddModelError("", "Something went wrong!");
+
+                return RedirectToAction("All", "Room");
             }
         }
 

@@ -1,15 +1,15 @@
 ﻿namespace WebProject.Core.Services.Room
 {
     using Core.IConfiguration;
-    using IServices;
-    using Infrastructure.Data.Models.Room;
     using Infrastructure.Data.Models.MappingTables;
+    using Infrastructure.Data.Models.Room;
+    using IServices;
     using Models.Landmark;
     using Models.Room;
     using Models.Room.Auxiliary;
     using Models.Room.Enums;
-    using Views.Room.Auxiliary;
     using Services.Room.Auxiliary;
+    using Views.Room.Auxiliary;
 
     public class RoomService : IRoomService
     {
@@ -327,6 +327,72 @@
             }
 
             return new DetailsRoomViewModel();
+        }
+
+        public async Task<AllUserBookedRoomsFilteredServiceModel> AllUserBookedRoomsFiltered(AllUserBookedRoomsQueryModel queryModel, string userId)
+        {
+            if (userId == null)
+            {
+                throw new ArgumentException("Invalid user ID");
+            }
+
+            IEnumerable<ApplicationUserRoom> allUserBookedRooms = await unitOfWork.Rooms.GetUserBookedRoomsAsync(Guid.Parse(userId));
+
+            List<Room> userBookedRooms = new List<Room>();
+
+            foreach (Guid roomId in allUserBookedRooms.Select(r => r.RoomId))
+            {
+                Room currentRoomInfo = await unitOfWork.Rooms.GetUserBookedRoomsTypesAndBedTypes(roomId);
+
+                userBookedRooms.Add(currentRoomInfo);
+            }
+
+            IQueryable<Room> roomsAsQueryable = userBookedRooms.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(queryModel.Type))
+            {
+                roomsAsQueryable = roomsAsQueryable.Where(r => r.RoomType.Name == queryModel.Type);
+            }
+
+            if (!string.IsNullOrWhiteSpace(queryModel.BedType))
+            {
+                roomsAsQueryable = roomsAsQueryable.Where(r => r.Bed.TypeName == queryModel.BedType);
+            }
+
+            roomsAsQueryable = queryModel.RoomSorting switch
+            {
+                RoomSorting.All => roomsAsQueryable,
+                RoomSorting.PriceAscending => roomsAsQueryable.OrderBy(r => r.PricePerNigth),
+                RoomSorting.PriceDescending => roomsAsQueryable.OrderByDescending(r => r.PricePerNigth)
+            };
+
+            List<Room> userFilteredBookedRooms = roomsAsQueryable.ToList();
+
+            List<UserBookedRoomsViewModel> userBookedRoomsViewModels = new List<UserBookedRoomsViewModel>();
+
+            foreach (Room currentRoomInfo in userFilteredBookedRooms)
+            {
+                UserBookedRoomsViewModel userBookedRoomsViewModel = new UserBookedRoomsViewModel()
+                {
+                    Id = currentRoomInfo.Id,
+                    Name = currentRoomInfo.Name,
+                    PricePerNight = currentRoomInfo.PricePerNigth,
+                    DaysOfStay = currentRoomInfo.ToDate!.Value.Day - currentRoomInfo.FromDate!.Value.Day,
+                    TotalPrice = currentRoomInfo.PricePerNigth * (currentRoomInfo.ToDate!.Value.Day - currentRoomInfo.FromDate!.Value.Day),
+                    FromDate = currentRoomInfo.FromDate,
+                    ToDate = currentRoomInfo.ToDate,
+                    RoomImage = await GetRoomFirstImage(currentRoomInfo.Id),
+                    RoomType = currentRoomInfo.RoomType.Name,
+                    BedType = currentRoomInfo.Bed.TypeName
+                };
+
+                userBookedRoomsViewModels.Add(userBookedRoomsViewModel);
+            }
+
+            return new AllUserBookedRoomsFilteredServiceModel()
+            {
+                Rooms = userBookedRoomsViewModels
+            };
         }
 
         private async Task<string> GetRoomFirstImage(Guid roomId)

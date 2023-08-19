@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iJGw+DS7Ajx6iIlIEDK0o5/B9Fx100MgnICSK0w7Nuqz5KZig8sqyHsuHfrzlLtrsLiGPzari/V4rwlLIviwYQ==",
+  "dgSpecHash": "EIuq94K/2kXMt9Nkz6YDhJ4asnjMoTQJaoa7Vnp+N/22Cs5y8KNoQknfY0B9olFDIdGHK9ea8PBIMK4JH7BFvQ==",
   "success": true,
-  "projectFilePath": "D:\\Programming Staff\\Github\\Web_Project\\WebProject\\WebProject.Infrastructure\\WebProject.Infrastructure.csproj",
+  "projectFilePath": "D:\\Programming Staff\\Github\\ASP.NET-Hotel-Web-Project\\WebProject.Infrastructure\\WebProject.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Митко Георгиев Митев\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Митко Георгиев Митев\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",

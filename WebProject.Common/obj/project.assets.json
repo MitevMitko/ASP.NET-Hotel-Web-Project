@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming Staff\\Github\\Web_Project\\WebProject\\WebProject.Common\\WebProject.Common.csproj",
+      "projectUniqueName": "D:\\Programming Staff\\Github\\ASP.NET-Hotel-Web-Project\\WebProject.Common\\WebProject.Common.csproj",
       "projectName": "WebProject.Common",
-      "projectPath": "D:\\Programming Staff\\Github\\Web_Project\\WebProject\\WebProject.Common\\WebProject.Common.csproj",
+      "projectPath": "D:\\Programming Staff\\Github\\ASP.NET-Hotel-Web-Project\\WebProject.Common\\WebProject.Common.csproj",
       "packagesPath": "C:\\Users\\Митко Георгиев Митев\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming Staff\\Github\\Web_Project\\WebProject\\WebProject.Common\\obj\\",
+      "outputPath": "D:\\Programming Staff\\Github\\ASP.NET-Hotel-Web-Project\\WebProject.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

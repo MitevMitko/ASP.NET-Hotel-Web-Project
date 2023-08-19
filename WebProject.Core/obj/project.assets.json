@@ -9422,11 +9422,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming Staff\\Github\\Web_Project\\WebProject\\WebProject.Core\\WebProject.Core.csproj",
+      "projectUniqueName": "D:\\Programming Staff\\Github\\ASP.NET-Hotel-Web-Project\\WebProject.Core\\WebProject.Core.csproj",
       "projectName": "WebProject.Core",
-      "projectPath": "D:\\Programming Staff\\Github\\Web_Project\\WebProject\\WebProject.Core\\WebProject.Core.csproj",
+      "projectPath": "D:\\Programming Staff\\Github\\ASP.NET-Hotel-Web-Project\\WebProject.Core\\WebProject.Core.csproj",
       "packagesPath": "C:\\Users\\Митко Георгиев Митев\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming Staff\\Github\\Web_Project\\WebProject\\WebProject.Core\\obj\\",
+      "outputPath": "D:\\Programming Staff\\Github\\ASP.NET-Hotel-Web-Project\\WebProject.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9447,8 +9447,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Programming Staff\\Github\\Web_Project\\WebProject\\WebProject.Infrastructure\\WebProject.Infrastructure.csproj": {
-              "projectPath": "D:\\Programming Staff\\Github\\Web_Project\\WebProject\\WebProject.Infrastructure\\WebProject.Infrastructure.csproj"
+            "D:\\Programming Staff\\Github\\ASP.NET-Hotel-Web-Project\\WebProject.Infrastructure\\WebProject.Infrastructure.csproj": {
+              "projectPath": "D:\\Programming Staff\\Github\\ASP.NET-Hotel-Web-Project\\WebProject.Infrastructure\\WebProject.Infrastructure.csproj"
             }
           }
         }

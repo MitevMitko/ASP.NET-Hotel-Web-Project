@@ -1,6 +1,8 @@
 ﻿namespace WebProject.Core.IRepositories
 {
     using Infrastructure.Data.Models.Room;
+    using WebProject.Infrastructure.Data.Models.ApplicationUser;
+    using WebProject.Infrastructure.Data.Models.MappingTables;
 
     public interface IRoomRepository : IGenericRepository<Room>
     {
@@ -25,5 +27,11 @@
         Task<Guid> GetAvailabilityIdRoomStatusAsync(string roomAvailability);
 
         Task<Room> GetRoomAndApplicationUsersRoomsAsync(Guid id);
+
+        Task<IEnumerable<ApplicationUserRoom>> GetUserBookedRoomsAsync(Guid userId);
+
+        Task<IEnumerable<RoomImage>> GetRoomImagesAsync(Guid roomId);
+
+        Task<Room> GetUserBookedRoomsTypesAndBedTypes(Guid id);
     }
 }

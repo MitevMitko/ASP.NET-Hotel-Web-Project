@@ -17,7 +17,6 @@
 
         public RoomSorting RoomSorting { get; set; }
 
-
         public IEnumerable<string> Types { get; set; } = null!;
 
         public IEnumerable<string> BedTypes { get; set; } = null!;

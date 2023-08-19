@@ -9,6 +9,8 @@
     using IRepositories;
     using Infrastructure.Data.Models.Room;
     using Infrastucture.Data;
+    using WebProject.Infrastructure.Data.Models.ApplicationUser;
+    using WebProject.Infrastructure.Data.Models.MappingTables;
 
     public class RoomRepository : GenericRepository<Room>, IRoomRepository
     {
@@ -56,9 +58,11 @@
             return entity;
         }
 
-        public async Task<IEnumerable<RoomImage>> GetRoomImagesAsync()
+        public async Task<IEnumerable<RoomImage>> GetRoomImagesAsync(Guid roomId)
         {
-            return await context.RoomImages.ToListAsync();
+            return await context.RoomImages
+                .Where(ri => ri.RoomId == roomId)
+                .ToListAsync();
         }
 
         public async Task<Room> RoomDetailsAsync(Guid id)
@@ -69,6 +73,16 @@
                 .Include(r => r.RoomsFacilities)
                 .ThenInclude(rf => rf.Facility)
                 .FirstOrDefaultAsync(r => r.Id == id);
+
+            return entity;
+        }
+
+        public async Task<Room> GetUserBookedRoomsTypesAndBedTypes(Guid id)
+        {
+            var entity = await context.Rooms
+                .Include(r => r.Bed)
+                .Include(r => r.RoomType)
+                .FirstOrDefaultAsync();
 
             return entity;
         }
@@ -89,6 +103,13 @@
                 .Where(r => r.Id == id)
                 .Include(r => r.ApplicationUsersRooms)
                 .FirstOrDefaultAsync();
+        }
+
+        public async Task<IEnumerable<ApplicationUserRoom>> GetUserBookedRoomsAsync(Guid userId)
+        {
+            return await context.ApplicationUserRoom
+                .Where(aur => aur.UserId == userId)
+                .ToListAsync();
         }
     }
 }

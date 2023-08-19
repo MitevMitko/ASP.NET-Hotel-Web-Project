@@ -2,8 +2,8 @@
 {
     using Models.Room;
     using Models.Room.Auxiliary;
+    using Models.Landmark;
     using Services.Room.Auxiliary;
-    using WebProject.Core.Models.Landmark;
 
     public interface IRoomService
     {
@@ -22,5 +22,7 @@
         Task<BookRoomViewModel> BookRoomHttpGet(Guid id);
 
         Task BookRoomHttpPost(BookRoomViewModel model, string userId);
+
+        Task<AllUserBookedRoomsFilteredServiceModel> AllUserBookedRoomsFiltered(AllUserBookedRoomsQueryModel queryModel, string userId);
     }
 }

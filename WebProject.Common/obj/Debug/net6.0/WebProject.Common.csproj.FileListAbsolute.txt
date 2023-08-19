@@ -22,3 +22,15 @@ D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Common\obj\Debug\n
 D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Common\obj\Debug\net6.0\refint\WebProject.Common.dll
 D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Common\obj\Debug\net6.0\WebProject.Common.pdb
 D:\Programming Staff\Github\Web_Project\WebProject\WebProject.Common\obj\Debug\net6.0\ref\WebProject.Common.dll
+D:\Programming Staff\Github\ASP.NET-Hotel-Web-Project\WebProject.Common\bin\Debug\net6.0\WebProject.Common.deps.json
+D:\Programming Staff\Github\ASP.NET-Hotel-Web-Project\WebProject.Common\bin\Debug\net6.0\WebProject.Common.dll
+D:\Programming Staff\Github\ASP.NET-Hotel-Web-Project\WebProject.Common\bin\Debug\net6.0\WebProject.Common.pdb
+D:\Programming Staff\Github\ASP.NET-Hotel-Web-Project\WebProject.Common\obj\Debug\net6.0\WebProject.Common.csproj.AssemblyReference.cache
+D:\Programming Staff\Github\ASP.NET-Hotel-Web-Project\WebProject.Common\obj\Debug\net6.0\WebProject.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming Staff\Github\ASP.NET-Hotel-Web-Project\WebProject.Common\obj\Debug\net6.0\WebProject.Common.AssemblyInfoInputs.cache
+D:\Programming Staff\Github\ASP.NET-Hotel-Web-Project\WebProject.Common\obj\Debug\net6.0\WebProject.Common.AssemblyInfo.cs
+D:\Programming Staff\Github\ASP.NET-Hotel-Web-Project\WebProject.Common\obj\Debug\net6.0\WebProject.Common.csproj.CoreCompileInputs.cache
+D:\Programming Staff\Github\ASP.NET-Hotel-Web-Project\WebProject.Common\obj\Debug\net6.0\WebProject.Common.dll
+D:\Programming Staff\Github\ASP.NET-Hotel-Web-Project\WebProject.Common\obj\Debug\net6.0\refint\WebProject.Common.dll
+D:\Programming Staff\Github\ASP.NET-Hotel-Web-Project\WebProject.Common\obj\Debug\net6.0\WebProject.Common.pdb
+D:\Programming Staff\Github\ASP.NET-Hotel-Web-Project\WebProject.Common\obj\Debug\net6.0\ref\WebProject.Common.dll
